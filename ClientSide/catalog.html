@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template - Catalog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EPAM project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/catalog_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/catalog_responsive.css">
+</head>
+<body>
+<div class="super-container">
+    <header class="clearfix">
+        <div class="header__info-container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <span class="logo__text-shortened">TL</span>
+                    <span class="logo__text">Template</span>
+                </a>
+            </div>
+            <div class="header__cart">
+                <a href="cart.html">
+                    <div class="cart__icon">
+                        <img src="images/icon_bag.png" alt="bag">
+                    </div>
+                    <div class="cart__info">
+                        <span class="cart__text">Bag</span>
+                        <span class="cart__sum"></span>
+                        <span class="cart__counter">(0)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__btn">
+                <a class="sign-up-btn" href="#">E-mail sign up</a>
+            </div>
+        </div>
+        <div class="header__menu-container">
+            <a href="#header-menu" class="menu-toggle" id="header-menu-toggle" aria-expanded="false" aria-controls="header-menu" aria-label="Open menu">
+                <div aria-hidden="true">
+                    <img src="images/icon_menu.png" alt="open">
+                </div>
+            </a>
+            <nav class="header__menu" id="header-menu" aria-expanded="false" aria-label="Menu">
+                <a href="#" class="menu-close" id="header-menu-close" aria-expanded="false" aria-controls="header-menu" aria-label="Close menu">
+                    <span aria-hidden="true">
+                        <img src="images/icon_close.png">
+                    </span>
+                </a>
+                <ul class="menu">
+                    <li class="menu__item active"><a href="#">Women</a></li>
+                    <li class="menu__item"><a href="#">Men</a></li>
+                    <li class="menu__item"><a href="#">Handbags</a></li>
+                    <li class="menu__item"><a href="#">Accessories</a></li>
+                    <li class="menu__item"><a href="#">Sale</a></li>
+                    <li class="menu__item"><a href="#">New Arrivals</a></li>
+                    <li class="menu__item"><a href="#">Clearance</a></li>
+                    <li class="menu__item"><a href="#">Store Locator</a></li>
+                </ul>
+                <div class="header__search">
+                    <form action="#" class="header__search-form">
+                        <input type="search" name="search-form__input" class="search-form__input" placeholder="Style Name" required>
+                        <button type="submit" class="search-form__button"><img src="images/icon_search.png" alt="Search"></button>
+                    </form>
+                </div>
+            </nav>
+            <a href="#header-menu" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </div>
+    </header>
+    <section class="filters clearfix">
+        <div class="filters__holder">
+            <span class="filter-description active">Casual style, </span>
+            <span class="filter-description">Product type, </span>
+            <span class="filter-description">Color, </span>
+            <span class="filter-description active">Antipodium, </span>
+            <span class="filter-description active">UK 18, </span>
+            <span class="filter-description">Price range</span>
+        </div>
+        <div class="filters__list-container">
+            <a href="#filters" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters" aria-label="Open filters">
+                <div aria-hidden="true">
+                    <img src="images/arrow_down.png">
+                </div>
+            </a>
+            <div class="filters__container" id="filters" aria-expanded="false" aria-label="Filters">
+                <a href="#" class="filters-close" id="filters-close" aria-expanded="false" aria-controls="filters" aria-label="Close filters">
+                    <span aria-hidden="true">
+                        <img src="images/icon_close.png">
+                    </span>
+                </a>
+                <div>
+                    <ul class="filters__list clearfix">
+                        <li>
+                            <span class="filter-description">Fashion</span>
+                            <i class="arrow-down"></i>
+                            <ul>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Not selected
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Nail the 90s
+                                    </span>
+                                </li>
+                                <li class="filter-item active">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Casual style
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        New look
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Sport
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Vintage
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Classical style
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="filter-description">Product type</span>
+                            <i class="arrow-down"></i>
+                            <ul>
+                                <li class="filter-item not-selected">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Not selected
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Coats &amp; Jackets
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Dresses
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Jersey Tops
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="filter-description">Color</span>
+                            <i class="arrow-down"></i>
+                            <ul>
+                                <li class="filter-item not-selected">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Not selected
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Black
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Blue
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Red
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Green
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Golden
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="filter-description">Brand</span>
+                            <i class="arrow-down"></i>
+                            <ul>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Not selected
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Chi Chi London
+                                    </span>
+                                </li>
+                                <li class="filter-item active">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Antipodium
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Adidas
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        New Balance
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        River Island
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="filter-description">Size</span>
+                            <i class="arrow-down"></i>
+                            <ul>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Not selected
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 2
+                                    </span>
+                                </li>
+                                <li class="filter-item active">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 18
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 18L
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 20
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 20L
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 20S
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 22S
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        UK 22
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="filter-description">Price range</span>
+                            <i class="arrow-down"></i>
+                            <ul>
+                                <li class="filter-item not-selected">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        Not selected
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        To &#163;99
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        &#163;100-&#163;299
+                                    </span>
+                                </li>
+                                <li class="filter-item">
+                                    <span>
+                                        <svg height="10" width="10">
+                                            <circle cx="5" cy="5" r="3" fill="#d2d2d2"></circle>
+                                        </svg>
+                                        From &#163;300
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#filters" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="content-container">
+            <div class="catalog__list clearfix">
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog3.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Only Skinny Jeans</div>
+                            <div class="item__price">&#163;65.50</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog4.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Boyfriend T-shirt with Bohemian Print</div>
+                            <div class="item__price">&#163;76.25</div>
+                        </div>
+                    </a>
+                </div>
+                <article class="catalog__announcement">
+                    <div class="announcement__text">Last weekend <span class="text-accent">extra 50%</span> off on all reduced boots and shoulder bags</div>
+                    <div class="item__mark">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</div>
+                </article>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog1.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Turtle Neck Jumper in Rib</div>
+                            <div class="item__price">&#163;130.25</div>
+                            <div class="item__mark">New</div>
+                        </div>
+                    </a>
+                </div>
+                <article class="catalog__announcement">
+                    <div class="announcement__text">Last weekend <span class="text-accent">extra 50%</span> off on all reduced boots and shoulder bags</div>
+                    <div class="item__mark">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</div>
+                </article>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog5.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">With Patchwork Crochet</div>
+                            <div class="item__price">&#163;80.60</div>
+                        </div>
+                    </a>
+                </div>
+                <article class="catalog__announcement">
+                    <div class="announcement__text">Last weekend <span class="text-accent">extra 50%</span> off on all reduced boots and shoulder bags</div>
+                    <div class="item__mark">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</div>
+                </article>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog6.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Levi's Jeans for women</div>
+                            <div class="item__mark">More colours</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog7.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Boyfriend T-Shirt with Bohemian Print</div>
+                            <div class="item__price-old">&#163;120.00</div>
+                            <div class="item__mark">-25%</div>
+                            <div class="item__price">&#163;90.00</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog8.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Colour Block</div>
+                            <div class="item__price">&#163;550.50</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog9.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Monki Festval Knitted</div>
+                            <div class="item__price">&#163;24.75</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog10.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Oversized Cardigan</div>
+                            <div class="catalog__item__price">&#163;90.00</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog11.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Paul &amp; Joe Sister Jumper with Neon Trims</div>
+                            <div class="item__price">&#163;19.75</div>
+                            <div class="item__mark">New</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog12.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Only Busted Knee Jean</div>
+                            <div class="item__price">&#163;140.50</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__item">
+                    <a href="item.html">
+                        <div class="item__image">
+                            <img src="images/catalog13.png" alt="">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__name">Boyfriend T-Shirt with Bohemian Print</div>
+                            <div class="item__price">&#163;85.75</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a class="btn" href="#">Show more</a>
+        </div>
+    </section>
+    <section class="sales">
+        <div class="sales__item">
+            <img src="images/sales1.png">
+            <div class="item__description">
+                <div class="item__name">Adidas Blue</div>
+                <div class="item__mark">For men</div>
+            </div>
+        </div>
+        <div class="sales__item">
+            <img src="images/sales2.png">
+            <div class="item__description">
+                <div class="item__name">Repair Patches</div>
+                <div class="item__mark">&#163;150.50</div>
+            </div>
+        </div>
+        <div class="sales__item">
+            <img src="images/bag.png">
+            <div class="item__description">
+                <div class="item__name text-accent">Sale</div>
+                <div class="item__mark">-70%</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__top">
+            <div class="footer__lists">
+                <div class="content-container">
+                    <div class="footer__column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer__links">
+                            <li class="links__item"><a href="#">Store locator</a></li>
+                            <li class="links__item"><a href="#">Gift cards</a></li>
+                            <li class="links__item"><a href="#">Size guide</a></li>
+                            <li class="links__item"><a href="#">About us</a></li>
+                            <li class="links__item"><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Customer Care</h3>
+                        <ul class="footer__care">
+                            <li class="care__item"><a href="#">Customer service</a></li>
+                            <li class="care__item"><a href="#">Track my order</a></li>
+                            <li class="care__item"><a href="#">Return policy</a></li>
+                            <li class="care__item"><a href="#">Shipping &amp; delivery</a></li>
+                            <li class="care__item"><a href="#">Contact us</a></li>
+                            <li class="care__item"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__other">
+                <div class="content-container">
+                    <div class="footer__column">
+                        <h3>Questions</h3>
+                        <p class="footer__description"><a href="#"><img src="images/icon_twi.png"></a>Tweet us <strong>@template</strong></p>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Order by phone</h3>
+                        <p class="footer__description">8-800-409-47-12</p>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__notice">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                        <div class="footer__social">
+                            <a href="#"><img src="images/icon_fb.png" alt="Facebook"></a>
+                            <a href="#"><img src="images/icon_twi_blue.png" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__additional">
+                <ul>
+                    <li class="additional__item"><a href="#">Legal notice</a></li>
+                    <li class="additional__item"><a href="#">Privacy policy</a></li>
+                    <li class="additional__item"><a href="#">Site map</a></li>
+                </ul>
+                <div class="footer__social">
+                    <a href="#"><img src="images/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/icon_twi_blue.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer__copy-share clearfix">
+                <div class="footer__copyright">&copy; 2010-2015, The Template Group Inc.</div>
+                <div class="footer__share">
+                    <h3>Share</h3>
+                    <span>1 437</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/search.js"></script>
+</body>
+</html>

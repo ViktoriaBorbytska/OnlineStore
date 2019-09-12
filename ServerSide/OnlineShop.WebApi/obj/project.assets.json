@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "OnlineShop.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/OnlineShop.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineShop.BLL.dll": {}
+        }
+      },
+      "OnlineShop.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/OnlineShop.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineShop.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineShop.BLL/1.0.0": {
+      "type": "project",
+      "path": "../OnlineShop.BLL/OnlineShop.BLL.csproj",
+      "msbuildProject": "../OnlineShop.BLL/OnlineShop.BLL.csproj"
+    },
+    "OnlineShop.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../OnlineShop.Interfaces/OnlineShop.Interfaces.csproj",
+      "msbuildProject": "../OnlineShop.Interfaces/OnlineShop.Interfaces.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.2": [
+      "OnlineShop.BLL >= 1.0.0",
+      "OnlineShop.Interfaces >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\synne\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.WebApi\\OnlineShop.WebApi.csproj",
+      "projectName": "OnlineShop.WebApi",
+      "projectPath": "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.WebApi\\OnlineShop.WebApi.csproj",
+      "packagesPath": "C:\\Users\\synne\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.WebApi\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\synne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.2"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "projectReferences": {
+            "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.BLL\\OnlineShop.BLL.csproj": {
+              "projectPath": "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.BLL\\OnlineShop.BLL.csproj"
+            },
+            "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.Interfaces\\OnlineShop.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\synne\\Desktop\\OnlineShop\\OnlineShop.Interfaces\\OnlineShop.Interfaces.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

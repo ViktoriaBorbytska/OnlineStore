@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template - Item</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EPAM project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/item_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/item_responsive.css">
+</head>
+<body>
+<div class="super-container">
+    <header class="clearfix">
+        <div class="header__info-container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <span class="logo__text-shortened">TL</span>
+                    <span class="logo__text">Template</span>
+                </a>
+            </div>
+            <div class="header__cart">
+                <a href="cart.html">
+                    <div class="cart__icon">
+                        <img src="images/icon_bag.png" alt="bag">
+                    </div>
+                    <div class="cart__info">
+                        <span class="cart__text">Bag</span>
+                        <span class="cart__sum"></span>
+                        <span class="cart__counter">(0)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__btn">
+                <a class="sign-up-btn" href="#">E-mail sign up</a>
+            </div>
+        </div>
+        <div class="header__menu-container">
+            <a href="#header-menu" class="menu-toggle" id="header-menu-toggle" aria-expanded="false" aria-controls="header-menu" aria-label="Open menu">
+                <div aria-hidden="true">
+                    <img src="images/icon_menu.png" alt="open">
+                </div>
+            </a>
+            <nav class="header__menu" id="header-menu" aria-expanded="false" aria-label="Menu">
+                <a href="#" class="menu-close" id="header-menu-close" aria-expanded="false" aria-controls="header-menu" aria-label="Close menu">
+                    <span aria-hidden="true">
+                        <img src="images/icon_close.png">
+                    </span>
+                </a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#">Women</a></li>
+                    <li class="menu__item"><a href="#">Men</a></li>
+                    <li class="menu__item"><a href="#">Handbags</a></li>
+                    <li class="menu__item"><a href="#">Accessories</a></li>
+                    <li class="menu__item"><a href="#">Sale</a></li>
+                    <li class="menu__item"><a href="#">New Arrivals</a></li>
+                    <li class="menu__item"><a href="#">Clearance</a></li>
+                    <li class="menu__item"><a href="#">Store Locator</a></li>
+                </ul>
+                <div class="header__search">
+                    <form action="#" class="header__search-form">
+                        <input type="search" name="search-form__input" class="search-form__input" placeholder="Style Name" required>
+                        <button type="submit" class="search-form__button"><img src="images/icon_search.png" alt="Search"></button>
+                    </form>
+                </div>
+            </nav>
+            <a href="#header-menu" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <div class="content-container">
+            <a href="catalog.html">&lt; Back to catalog</a>
+        </div>
+    </section>
+    <section class="item clearfix">
+        <div class="content-container">
+            <div class="item__images-wrapper clearfix">
+                <div class="item__image-selected">
+                    <img src="images/suit1.jpg" alt="Man in suit" id="fullsize">
+                </div>
+                <div class="item__images-list clearfix">
+                    <img class="thumb" src="images/suit1.jpg" alt="Man in suit" id="thumb1" onmouseover="pictureChange(true, 'thumb1')" onmouseout="pictureChange(false)">
+                    <img class="thumb" src="images/suit2.jpg" alt="Man in suit" id="thumb2" onmouseover="pictureChange(true, 'thumb2')" onmouseout="pictureChange(false)">
+                    <img class="thumb" src="images/suit3.jpg" alt="Man in suit" id="thumb3" onmouseover="pictureChange(true, 'thumb3')" onmouseout="pictureChange(false)">
+                </div>
+            </div>
+            <div class="item__description-wrapper clearfix">
+                <h2>Dark classic fit suit</h2>
+                <div class="item__price">&#163;180.60</div>
+                <div class="item__mark">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs and a subtle stripe pattern throughout.</div>
+                <div class="item__price">&#163;180.60</div>
+                <div class="item__property clearfix">
+                    <span>Size:</span>
+                    <ul class="property__size clearfix">
+                        <li class="selected">
+                            <span>UK 52</span>
+                        </li>
+                        <li>
+                            <span>UK 54</span>
+                        </li>
+                        <li>
+                            <span>UK 56</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item__property clearfix">
+                    <span>Color:</span>
+                    <ul class="property__color clearfix">
+                        <li>
+                            <span>Black</span>
+                        </li>
+                        <li class="selected">
+                            <span>Blue</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Add to bag</a>
+            </div>
+        </div>
+    </section>
+    <section class="sales">
+        <div class="sales__item">
+            <img src="images/sales1.png">
+            <div class="item__description">
+                <div class="item__name">Adidas Blue</div>
+                <div class="item__mark">For men</div>
+            </div>
+        </div>
+        <div class="sales__item">
+            <img src="images/sales2.png">
+            <div class="item__description">
+                <div class="item__name">Repair Patches</div>
+                <div class="item__mark">&#163;150.50</div>
+            </div>
+        </div>
+        <div class="sales__item">
+            <img src="images/bag.png">
+            <div class="item__description">
+                <div class="item__name text-accent">Sale</div>
+                <div class="item__mark">-70%</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__top">
+            <div class="footer__lists">
+                <div class="content-container">
+                    <div class="footer__column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer__links">
+                            <li class="links__item"><a href="#">Store locator</a></li>
+                            <li class="links__item"><a href="#">Gift cards</a></li>
+                            <li class="links__item"><a href="#">Size guide</a></li>
+                            <li class="links__item"><a href="#">About us</a></li>
+                            <li class="links__item"><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Customer Care</h3>
+                        <ul class="footer__care">
+                            <li class="care__item"><a href="#">Customer service</a></li>
+                            <li class="care__item"><a href="#">Track my order</a></li>
+                            <li class="care__item"><a href="#">Return policy</a></li>
+                            <li class="care__item"><a href="#">Shipping &amp; delivery</a></li>
+                            <li class="care__item"><a href="#">Contact us</a></li>
+                            <li class="care__item"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__other">
+                <div class="content-container">
+                    <div class="footer__column">
+                        <h3>Questions</h3>
+                        <p class="footer__description"><a href="#"><img src="images/icon_twi.png"></a>Tweet us <strong>@template</strong></p>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Order by phone</h3>
+                        <p class="footer__description">8-800-409-47-12</p>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__notice">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                        <div class="footer__social">
+                            <a href="#"><img src="images/icon_fb.png" alt="Facebook"></a>
+                            <a href="#"><img src="images/icon_twi_blue.png" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__additional">
+                <ul>
+                    <li class="additional__item"><a href="#">Legal notice</a></li>
+                    <li class="additional__item"><a href="#">Privacy policy</a></li>
+                    <li class="additional__item"><a href="#">Site map</a></li>
+                </ul>
+                <div class="footer__social">
+                    <a href="#"><img src="images/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/icon_twi_blue.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer__copy-share clearfix">
+                <div class="footer__copyright">&copy; 2010-2015, The Template Group Inc.</div>
+                <div class="footer__share">
+                    <h3>Share</h3>
+                    <span>1 437</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/search.js"></script>
+<script src="js/photo_switcher.js"></script>
+</body>
+</html>
